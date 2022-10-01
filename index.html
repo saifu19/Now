@@ -10,6 +10,31 @@
         body{
             overflow: hidden;
         }
+        .adobeFont {
+            font-weight: 400; font-style: normal;
+        }
+        .tag-line {
+            color: #002d72;
+            padding: 0 2.1vh;
+            position: relative;
+            border-left: 2px solid #002d72;
+            font-size: 3.2vh;
+            line-height: .6;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        .tag-line span {
+            display: block;
+            color: #7ba4db;
+            font-size: 1.7vh;
+            line-height: .8;
+            font-weight: 400;
+            text-transform: uppercase;
+            position: relative;
+            top: -.3vh;
+            margin: 0 0 2px;
+            letter-spacing: 1.3px;
+        }
         .row1 {
             background-color: #4b019e;
             /* margin-left: 2px; */
@@ -27,6 +52,23 @@
         }
     </style>
     <body>
+        <nav class="bg-white d-flex justify-content-between">
+            <div class="d-flex align-items-center my-2">
+                <img src="logo1.png" class="d-none d-md-block" style="width: 10vw">
+                <img src="logo-mob.png" class="d-md-none" style="width: 10vw">
+                <div class="tag-line adobeFont" style="color:#A21F31"> 
+                    <span style="text-transform: none;color:#1C316C">
+                    Virtual
+                    </span>
+                    Benefits Platform
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-end me-3">
+                <img src="q-mark.svg" class="me-2 d-none d-md-block" style="height: 50%;">
+                <img src="map-icon.svg" style="height: 50%;">
+            </div>
+        </nav>
+
         <div class="row mb-1 g-1">
             <div class="col-md-4">
                 <div class="d-flex row1 align-items-center justify-content-center">

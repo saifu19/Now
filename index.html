@@ -13,6 +13,34 @@
         .nav {
             height: 10vh;
         }
+        .map {
+            cursor: pointer;
+        }
+        .sidebar {
+            height: 100vh;
+            overflow-y: auto !important;
+            /* width: 30vw; */
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #A21F31;
+            color: white;
+            display: none;
+        }
+        .sideMenu {
+            list-style: none;
+            overflow-y: auto;
+        }
+        .sideItem {
+            cursor: pointer;
+            line-height: 1.5;
+            padding: 10px 15px;
+        }
+        .sideItem:hover {
+            background-color: white;
+            color: #A21F31;
+            border-radius: 5px;
+        }
         .adobeFont {
             font-weight: 400; font-style: normal;
         }
@@ -76,7 +104,31 @@
             </div>
             <div class="d-flex align-items-center justify-content-end me-3">
                 <img src="q-mark.svg" class="me-2 d-none d-md-block" style="height: 6vh">
-                <img src="map-icon.svg" style="height: 6vh">
+                <img src="map-icon.svg" class="map" style="height: 6vh">
+            </div>
+        </nav>
+        <nav class="sidebar">
+            <div class="mt-2 mb-3 text-end">
+                <button class="btn text-white close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="text-center mx-4">
+                <p class="sideItem mb-0">Home</p>
+                <p class="sideItem mb-0">Medical & Wellness</p>
+                <p class="sideItem mb-0">Dental</p>
+                <p class="sideItem mb-0">Life and AD&D Insurance</p>
+                <p class="sideItem mb-0">Disability & Leave</p>
+                <p class="sideItem mb-0">Mental Wellness</p>
+                <p class="sideItem mb-0">Vision</p>
+                <p class="sideItem mb-0">Financial Wellness</p>
+                <p class="sideItem mb-0">FSA</p>
+                <p class="sideItem mb-0">Voluntary Benefits</p>
+                <p class="sideItem mb-0">Benefits Resources</p>
+                <p class="bg-white py-1 my-1"></p>
+                <p class="sideItem mb-0">Logout</p>
             </div>
         </nav>
         <div class="row g-1">
@@ -154,6 +206,15 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     </body>
+    <script>
+        $(".map").click(function() {
+            $('.sidebar').show()
+        })
+        $('.close').click(function() {
+            $('.sidebar').hide()
+        })
+    </script>
 
 </html>

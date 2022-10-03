@@ -10,6 +10,13 @@
         body{
             overflow: hidden;
         }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover {
+            color: initial;
+        }
         .nav {
             height: 10vh;
         }
@@ -116,19 +123,19 @@
                 </button>
             </div>
             <div class="text-center mx-4">
-                <p class="sideItem mb-0">Home</p>
-                <p class="sideItem mb-0">Medical & Wellness</p>
-                <p class="sideItem mb-0">Dental</p>
-                <p class="sideItem mb-0">Life and AD&D Insurance</p>
-                <p class="sideItem mb-0">Disability & Leave</p>
-                <p class="sideItem mb-0">Mental Wellness</p>
-                <p class="sideItem mb-0">Vision</p>
-                <p class="sideItem mb-0">Financial Wellness</p>
-                <p class="sideItem mb-0">FSA</p>
-                <p class="sideItem mb-0">Voluntary Benefits</p>
-                <p class="sideItem mb-0">Benefits Resources</p>
-                <p class="bg-white py-1 my-1"></p>
-                <p class="sideItem mb-0">Logout</p>
+                <p class="sideItem mb-0"><a href="#">Home</a></p>
+                <p class="sideItem mb-0"><a href="#">Medical & Wellness</a></p>
+                <p class="sideItem mb-0"><a href="#">Dental</a></p>
+                <p class="sideItem mb-0"><a href="#">Life and AD&D Insurance</a></p>
+                <p class="sideItem mb-0"><a href="#">Disability & Leave</a></p>
+                <p class="sideItem mb-0"><a href="#">Mental Wellness</a></p>
+                <p class="sideItem mb-0"><a href="#">Vision</a></p>
+                <p class="sideItem mb-0"><a href="#">Financial Wellness</a></p>
+                <p class="sideItem mb-0"><a href="#">FSA</a></p>
+                <p class="sideItem mb-0"><a href="#">Voluntary Benefits</a></p>
+                <p class="sideItem mb-0"><a href="#">Benefits Resources</a></p>
+                <p class="bg-white py-1 my-1"></a></p>
+                <p class="sideItem mb-0"><a href="#">Logout</a></p>
             </div>
         </nav>
         <div class="row g-1">
@@ -210,10 +217,10 @@
     </body>
     <script>
         $(".map").click(function() {
-            $('.sidebar').show()
+            $('.sidebar').show(500)
         })
         $('.close').click(function() {
-            $('.sidebar').hide()
+            $('.sidebar').hide(500)
         })
     </script>
 
